@@ -2270,5 +2270,7 @@ input[type=number] {
   border-radius: 0px 0px 50px 0px; }
 
 /*---------------------------END-PAGE-ABOUT-----------------------------*/
+.home-slider .wrap {
+  padding-bottom: 300px; }
 
 /*# sourceMappingURL=styles.css.map */
