@@ -2273,4 +2273,10 @@ input[type=number] {
 .home-slider .wrap {
   padding-bottom: 300px; }
 
+.popup-form {
+  border-radius: 40px 0 40px 40px; }
+  .popup-form .fancybox-close-small {
+    top: 30px;
+    right: 30px; }
+
 /*# sourceMappingURL=styles.css.map */

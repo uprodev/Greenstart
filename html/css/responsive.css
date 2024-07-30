@@ -1399,7 +1399,11 @@
 
   .btn-wrap a, .btn-wrap button, .partners-form .input-wrap-submit a, .partners-form .input-wrap-submit button {
     max-width: 295px;
-    margin: auto; } }
+    margin: auto; }
+
+  .popup-form .fancybox-close-small {
+    top: 5px;
+    right: 5px; } }
 @media (max-width: 375px) {
   .btn-wrap a, .btn-wrap button, .partners-form .input-wrap-submit a, .partners-form .input-wrap-submit button {
     max-width: 100%;
