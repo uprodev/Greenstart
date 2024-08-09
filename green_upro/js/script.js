@@ -78,6 +78,11 @@ jQuery(document).ready(function ($) {
   $(".top-line").sticky({
     topSpacing:0
   });
+  $(".tabs-menu").sticky({
+    topSpacing:85
+  });
+
+
 
   //slider
   var swiperBlog = new Swiper(".blog-slider", {
@@ -239,5 +244,5 @@ jQuery(document).ready(function ($) {
     }
   })
 
-
+  $('.tabs-menu').onePageNav();
 });

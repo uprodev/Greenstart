@@ -968,9 +968,9 @@ figure .img-mob {
 .tabs-menu li a:hover span:after {
   -webkit-transform: scaleX(1);
   transform: scaleX(1); }
-.tabs-menu .is-active a {
+/*.tabs-menu .is-active a {
   background: #2d5632;
-  color: #fff; }
+  color: #fff; }*/
 .tabs-menu .is-active a span:after {
   display: none; }
 
@@ -2365,5 +2365,43 @@ input[type=number] {
 .faq h5{
   font-size: 20px;
   line-height: 30px;
+}
+
+.page-img-text .line figure img{
+  min-height: 522px;
+  object-fit: cover;
+}
+
+.tabs-menu{
+  margin: 0!important;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+}
+.page-img-text .no-tabs{
+  margin-top: -40px;
+}
+.page-img-text .tab-content{
+  margin-top: 40px;
+}
+
+.page-img-text .sticky-wrapper{
+  z-index: 10;
+}
+.blog{
+  z-index: 10;
+  background: whitesmoke;
+}
+.logo-block{
+  position: relative;
+  z-index: 10;
+}
+.pre-footer{
+  z-index: 10;
+}
+
+.tabs-menu .current a{
+  background: #2d5632;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

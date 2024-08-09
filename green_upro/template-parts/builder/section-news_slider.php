@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<?php if($projects): ?>
+	<?php if($news): ?>
 
 		<section class="blog"<?php if($id) echo ' id="' . $id . '"' ?>>
 			<div class="bg">
@@ -24,12 +24,12 @@ if($args['row']):
 					<div class="swiper blog-slider">
 						<div class="swiper-wrapper">
 
-							<?php foreach($projects as $post): 
+							<?php foreach($news as $post): 
 
 								global $post;
 								setup_postdata($post); ?>
 								<div class="swiper-slide">
-									<?php get_template_part('parts/content', 'post_project') ?>	
+									<?php get_template_part('parts/content', 'post_project') ?>									
 								</div>
 							<?php endforeach; ?>
 							<?php wp_reset_postdata(); ?>
@@ -49,7 +49,7 @@ if($args['row']):
 					<div class="swiper text-slider">
 						<div class="swiper-wrapper">
 
-							<?php foreach($projects as $post): 
+							<?php foreach($news as $post): 
 
 								global $post;
 								setup_postdata($post); ?>

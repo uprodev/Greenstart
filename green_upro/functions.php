@@ -22,6 +22,7 @@ function load_style_script(){
 	wp_enqueue_script('my-nice-select', get_stylesheet_directory_uri() . '/js/jquery.nice-select.min.js', array(), false, true);
 	wp_enqueue_script('my-cuttr', get_stylesheet_directory_uri() . '/js/cuttr.min.js', array(), false, true);
 	wp_enqueue_script('my-sticky', get_stylesheet_directory_uri() . '/js/jquery.sticky.js', array(), false, true);
+	wp_enqueue_script('my-nav', get_stylesheet_directory_uri() . '/js/jquery.nav.min.js', array(), false, true);
 	wp_enqueue_script('my-script', get_stylesheet_directory_uri() . '/js/script.js', array(), false, true);
 	wp_enqueue_script('my-add', get_stylesheet_directory_uri() . '/js/add.js', array(), false, true);
 }
