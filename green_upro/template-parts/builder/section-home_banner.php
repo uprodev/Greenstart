@@ -3,7 +3,7 @@ if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
 	<?php if (is_array($items) && checkArrayForValues($items)): ?>
-	<section class="home-banner">
+	<section class="home-banner"<?php if($id) echo ' id="' . $id . '"' ?>>
 		<div class="slider-wrap">
 			<div class="swiper home-slider">
 				<div class="swiper-wrapper">

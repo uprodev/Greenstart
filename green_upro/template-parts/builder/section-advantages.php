@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="text-item-4x">
+	<section class="text-item-4x"<?php if($id) echo ' id="' . $id . '"' ?>>
 		<div class="content-width">
 			<div class="content">
 				<div class="title">
@@ -30,7 +30,7 @@ if($args['row']):
 							<?php if ($item['icon']): ?>
 								<figure>
 									<?php if (pathinfo($item['icon']['url'])['extension'] == 'svg'): ?>
-										<img class="img-svg" src="<?= $item['icon']['url'] ?>" alt="<?= $item['icon']['alt'] ?>">
+										<img src="<?= $item['icon']['url'] ?>" alt="<?= $item['icon']['alt'] ?>">
 									<?php else: ?>
 										<?= wp_get_attachment_image($item['icon']['ID'], 'full') ?>
 									<?php endif ?>

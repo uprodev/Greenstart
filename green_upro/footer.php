@@ -132,6 +132,17 @@
 
 </div>
 </footer>
+
+<div class="popup-blog popup-form" id="form_popup" style="display: none">
+  <?= do_shortcode('[contact-form-7 id="50c8dc4" html_class="main"]') ?>
+</div>
+
+<div class="popup-send popup-form" id="thank_popup" style="display: none">
+  <div class="main">
+    <h6>Thank you for your message. It has been sent.</h6>
+  </div>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -2,6 +2,8 @@
 
 // show_admin_bar( false );
 
+include 'inc/ajax.php';
+
 add_action('wp_enqueue_scripts', 'load_style_script');
 function load_style_script(){
 	wp_enqueue_style('my-normalize', get_stylesheet_directory_uri() . '/css/normalize.css');
@@ -21,6 +23,7 @@ function load_style_script(){
 	wp_enqueue_script('my-cuttr', get_stylesheet_directory_uri() . '/js/cuttr.min.js', array(), false, true);
 	wp_enqueue_script('my-sticky', get_stylesheet_directory_uri() . '/js/jquery.sticky.js', array(), false, true);
 	wp_enqueue_script('my-script', get_stylesheet_directory_uri() . '/js/script.js', array(), false, true);
+	wp_enqueue_script('my-add', get_stylesheet_directory_uri() . '/js/add.js', array(), false, true);
 }
 
 

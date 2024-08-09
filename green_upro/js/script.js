@@ -129,6 +129,10 @@ jQuery(document).ready(function ($) {
 
        });
      }
+      $(document).on('click', '.blog-slider .swiper-slide', function (e) {
+        let item = $(this).index();
+        swiperText.slideTo(item);
+      });
     },
   });
 

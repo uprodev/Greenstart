@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="text-img">
+	<section class="text-img"<?php if($id) echo ' id="' . $id . '"' ?>>
 		<div class="content-width">
 			<div class="text">
 
