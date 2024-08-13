@@ -134,7 +134,7 @@ jQuery(document).ready(function ($) {
 
 
   //select
-  //$('.select-block select').niceSelect();
+  $('.form-map select').niceSelect();
 
   //scroll
   $(document).on('click', '.scroll a', function (e) {
@@ -213,9 +213,12 @@ jQuery(document).ready(function ($) {
   }
 
   //modile select
-  $(document).on('click', '.nice-select', function (e){
-    $(this).toggleClass('open');
-  })
+  if(!$('.form-map').length>0){
+    $(document).on('click', '.nice-select', function (e){
+      $(this).toggleClass('open');
+    })
+  }
+
 
   $(document).on('click', '.nice-select .option', function (e){
     let item = $(this).text();
