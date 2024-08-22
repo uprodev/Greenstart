@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
 
   //slider
   var swiperLogo = new Swiper(".logo-slider", {
-    spaceBetween: 35,
+    spaceBetween: 20,
     slidesPerView: 3,
     pagination: {
       el: ".logo-pagination",
@@ -78,7 +78,7 @@ jQuery(document).ready(function ($) {
   $(".top-line").sticky({
     topSpacing:0
   });
-  $(".tabs-menu").sticky({
+  $(".page-img-text .tabs-menu").sticky({
     topSpacing:85
   });
 
@@ -143,7 +143,7 @@ jQuery(document).ready(function ($) {
 
 
   //select
-  //$('.select-block select').niceSelect();
+  $('.form-map select').niceSelect();
 
   //scroll
   $(document).on('click', '.scroll a', function (e) {
@@ -222,9 +222,11 @@ jQuery(document).ready(function ($) {
   }
 
   //modile select
-  $(document).on('click', '.nice-select', function (e){
-    $(this).toggleClass('open');
-  })
+  if(!$('.form-map').length>0){
+    $(document).on('click', '.nice-select', function (e){
+      $(this).toggleClass('is-open');
+    })
+  }
 
   $(document).on('click', '.nice-select .option', function (e){
     let item = $(this).text();
@@ -245,4 +247,6 @@ jQuery(document).ready(function ($) {
   })
 
   $('.tabs-menu').onePageNav();
+
+  $('.form-map .nice-select .list  li:first-child').addClass('disabled')
 });

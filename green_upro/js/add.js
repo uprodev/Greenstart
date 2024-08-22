@@ -30,10 +30,13 @@ jQuery(document).ready(function($) {
 
 
 	document.addEventListener( 'wpcf7mailsent', function( event ) {
-		$.fancybox.open( $('#thank_popup'), {
-			touch:false,
-			autoFocus:false,
-		});
+		if ('9' == event.detail.contactFormId || '864' == event.detail.contactFormId) {
+			$.fancybox.close();
+			$.fancybox.open( $('#thank_popup'), {
+				touch:false,
+				autoFocus:false,
+			});
+		}
 	}, false );
 
 });
