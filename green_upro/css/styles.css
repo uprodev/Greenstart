@@ -69,7 +69,6 @@ h1 {
   font-weight: 600;
   line-height: 57px;
   letter-spacing: 0;
-  text-transform: capitalize;
   margin: 0 0 20px; }
 
 h2 {
@@ -246,7 +245,7 @@ header {
   line-height: 66px;
   letter-spacing: 0;
   text-align: center;
-  text-transform: capitalize;
+  
   margin-bottom: 20px; }
 .home-slider p {
   width: 590px;
@@ -569,7 +568,7 @@ header {
   margin-top: 33px; }
 
 .map-block {
-  padding: 60px 0 80px; }
+  padding: 60px 0 40px; }
 .map-block .title {
   width: 445px;
   max-width: 100%;
@@ -578,7 +577,7 @@ header {
 .map-block h2 {
   text-align: center; }
 .map-block .map-wrap {
-  margin-bottom: 40px;
+  margin-bottom: -20px!important;
   padding: 0 20px; }
 .map-block .map-wrap img {
   width: 100%;
@@ -2544,4 +2543,9 @@ footer {
   position: relative;
   left: 13%;
   height: auto; }
+
+.faq figure img, .img-text .line figure img{
+	-webkit-box-shadow: 0px 0px 23px 0px rgba(21, 57, 25, 0.2);
+box-shadow: 0px 0px 23px 0px rgba(21, 57, 25, 0.2);
+}
 /*# sourceMappingURL=styles.css.map */
