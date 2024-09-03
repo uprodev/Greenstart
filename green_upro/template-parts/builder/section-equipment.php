@@ -16,7 +16,7 @@ if($args['row']):
 				<?php endif ?>
 
 			</div>
-			<div class="tabs">
+			<div class="tabs-2">
 				<ul class="tabs-menu">
 
 					<?php foreach ($items as $index => $item): ?>

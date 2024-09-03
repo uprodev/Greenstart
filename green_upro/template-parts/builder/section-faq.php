@@ -8,7 +8,7 @@ if($args['row']):
 	] ); 
 	?>
 
-	<?php if ($terms): ?>
+	<?php if ($terms && $faq): ?>
 		<section class="faq-tabs"<?php if($id) echo ' id="' . $id . '"' ?>>
 			<div class="content-width">
 				<div class="tabs">
@@ -56,7 +56,8 @@ if($args['row']):
 									<?php 
 									$args = array(
 										'post_type' => 'faq', 
-										'posts_per_page' => 6,
+										'posts_per_page' => 5,
+										'post__in' => $faq,
 										'tax_query' => array(
 											array(
 												'taxonomy' => 'faq_cat',

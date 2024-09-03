@@ -179,6 +179,7 @@ jQuery(document).ready(function ($) {
 
           $(tabs).find(".tabs-menu").children("li").click(function(){
             showPage(parseInt($(this).attr("data-page")));
+			  console.log(10)
           });
 
         };
@@ -186,6 +187,41 @@ jQuery(document).ready(function ($) {
       };
     })(jQuery);
     $(".tabs").lightTabs();
+	  
+	  
+	  (function($){
+      jQuery.fn.lightTabs = function(options){
+
+        var createTabs = function(){
+          tabs = this;
+          i = 0;
+
+          showPage = function(i){
+            $(tabs).find(".tab-content").children("div").hide();
+            $(tabs).find(".tab-content").children("div").eq(i).show();
+            $(tabs).find(".tabs-menu").children("li").removeClass("is-active");
+            $(tabs).find(".tabs-menu").children("li").eq(i).addClass("is-active");
+          }
+
+          showPage(0);
+
+          $(tabs).find(".tabs-menu").children("li").each(function(index, element){
+            $(element).attr("data-page", i);
+            i++;
+          });
+
+          $(tabs).find(".tabs-menu").children("li").click(function(){
+            showPage(parseInt($(this).attr("data-page")));
+			  console.log(10)
+          });
+
+        };
+        return this.each(createTabs);
+      };
+    })(jQuery);
+    $(".tabs-2").lightTabs();
+	  
+	  
 
   }else{
     (function($){
@@ -218,6 +254,37 @@ jQuery(document).ready(function ($) {
       };
     })(jQuery);
     $(".tabs").lightTabs();
+	  
+	  (function($){
+      jQuery.fn.lightTabs = function(options){
+
+        var createTabs = function(){
+          tabs = this;
+          i = 0;
+
+          showPage = function(i){
+            $(tabs).find(".tab-content").children("div").hide();
+            $(tabs).find(".tab-content").children("div").eq(i).show();
+            $(tabs).find(".tabs-menu-mob .list").children("li").removeClass("is-active");
+            $(tabs).find(".tabs-menu-mob .list").children("li").eq(i).addClass("is-active");
+          }
+
+          showPage(0);
+
+          $(tabs).find(".tabs-menu-mob .list").children("li").each(function(index, element){
+            $(element).attr("data-page", i);
+            i++;
+          });
+
+          $(tabs).find(".tabs-menu-mob .list").children("li").click(function(){
+            showPage(parseInt($(this).attr("data-page")));
+          });
+
+        };
+        return this.each(createTabs);
+      };
+    })(jQuery);
+    $(".tabs-2").lightTabs();
 
   }
 
