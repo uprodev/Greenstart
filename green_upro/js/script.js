@@ -169,6 +169,9 @@ jQuery(document).ready(function ($) {
     $(this).closest('.tabs').find('.tab-content').find('.tab-item').hide();
     $(this).closest('.tabs').find('.tab-content').find(".tab-item:nth-child(" + itemIndex +")").show()
    
+	   $(".accordion > .accordion-item").removeClass('is-active');
+	  $('.faq-tabs .accordion-panel').hide();
+	  
   })
   }else{
 

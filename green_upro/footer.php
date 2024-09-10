@@ -139,7 +139,7 @@
 
 <div class="popup-send popup-form" id="thank_popup" style="display: none">
   <div class="main">
-    <h6>Thank you for your message. It has been sent.</h6>
+    <h6><?php the_field('thank_message_text_g', 'option') ?></h6>
   </div>
 </div>
 

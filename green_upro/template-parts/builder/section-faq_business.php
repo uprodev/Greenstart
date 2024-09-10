@@ -74,7 +74,7 @@ if($args['row']):
 										<ul class="accordion" id="response_faq">
 
 											<?php while ($wp_query->have_posts()): $wp_query->the_post(); ?>
-												<?php get_template_part('parts/content', 'faq', ['index' => $wp_query->current_post]) ?>
+												<?php get_template_part('parts/content', 'faq') ?>
 											<?php endwhile; ?>
 
 										</ul>

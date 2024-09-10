@@ -2,3 +2,6 @@
 Theme Name: GreenSpot
 */
 
+.equipment + .faq-tabs{
+  padding-top: 0;
+}
